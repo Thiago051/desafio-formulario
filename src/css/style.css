@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+body {
+    background-image: linear-gradient(rgb(255, 0, 221), rgb(112, 11, 126), blueviolet);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0;
+    height: 100vh;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 60px;
+}
+
+.conteudo .titulo {
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 23.44px;
+    width: 287.25px;
+    height: 46px;
+    margin-bottom: 11px;
+}
+
+.conteudo .texto {
+    font-size: 1.5rem;
+    width: 300px;
+    height: 54px;
+}
+
+.conteudo .titulo,
+.conteudo .texto,
+.formulario span a {
+    color: #fff;
+}
+
+.formulario, .conteudo {
+    max-width: 340px;
+    max-height: 378px;
+}
+
+.formulario {
+    background-color: #fff;
+}
+
+.formulario {
+    font-display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.formulario input {
+    width: 298px;
+    height: 35.11px;
+    margin-bottom: 15px;
+}
+
+.formulario textarea {
+    width: 298px;
+    height: 100px;
+    resize: none;
+    margin-bottom: 16px;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 8px 0 8px 8px;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.formulario p {
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 11px;
+}
+
+.formulario span { /*.formulario button*/
+    width: 100%;
+    display: inline-block; 
+    text-align: center;
+    padding-top: 12px;
+    height: 41.13px;
+    background-color: #3CCC87;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.4);
+}
+
+.formulario span:hover { /*buatton:hover */
+    background-color: #0cce70;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.7);
+}
+
+.formulario .input.borda-verde {
+    border: 1px solid #00C22B;
+}
+
+.formulario .input.borda-vermelha {
+    border: 1px solid #F52E2E;
+}
+
+.formulario .obrigatorio {
+    color: #F52E2E;
+    font-weight: bold;
+}
