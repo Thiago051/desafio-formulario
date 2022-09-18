@@ -34,9 +34,8 @@ main {
 }
 
 .conteudo .titulo,
-.conteudo .texto,
-.formulario span a {
-    color: #fff;
+.conteudo .texto {
+    color: #FFF;
 }
 
 .formulario, .conteudo {
@@ -45,10 +44,7 @@ main {
 }
 
 .formulario {
-    background-color: #fff;
-}
-
-.formulario {
+    background-color: #FFF;
     font-display: flex;
     flex-direction: column;
     padding: 20px;
@@ -72,32 +68,39 @@ main {
     padding: 8px 0 8px 8px;
     border-radius: 5px;
     border: 1px solid #000;
+    transition: 0.4s ease-in-out;
 }
 
 .formulario p {
     font-weight: 400;
     font-size: 14px;
     margin-bottom: 11px;
+    transition: 0.4s ease-in-out;
 }
 
-.formulario span {
-    width: 100%;
-    display: inline-block; 
-    text-align: center;
-    padding-top: 12px;
-    height: 41.13px;
+.formulario .btn-enviar {
     background-color: #3CCC87;
-    font-size: 1.5rem;
-    font-weight: 700;
-    border: none;
+    display: inline-block;
+    width: 100%;
+    height: 41.13px;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.5s ease;
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.4);
 }
 
-.formulario span:hover { /*buatton:hover */
-    background-color: #0cce70;
+.formulario .btn-enviar p {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 700;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario .btn-enviar:hover { 
+    background-color: #0CCE70;
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.7);
 }
 
@@ -105,21 +108,23 @@ main {
     border: 1px solid #00C22B;
 }
 
+.formulario .input.borda-vermelha{
+    border: 1px solid #F52E2E;
+}
+
 .formulario .input.borda-verde:focus {
     outline: none;
     border: 2px solid #00C22B;
-}
-
-.formulario .input.borda-vermelha{
-    border: 1px solid #F52E2E;
+    transition: none;
 }
 
 .formulario .input.borda-vermelha:focus {
     outline: none;
     border: 2px solid #F52E2E;
+    transition: none;
 }
 
-.formulario .obrigatorio {
+.formulario .campos-obrigatorios {
     color: #F52E2E;
     font-weight: bold;
 }

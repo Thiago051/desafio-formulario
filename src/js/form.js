@@ -1,6 +1,6 @@
 const botaoEnviar = document.getElementById('btn-enviar');
 const inputs = document.querySelectorAll('.input');
-const camposObrigatorios = document.getElementById('obrigatorio') 
+const camposObrigatorios = document.getElementById('campos-obrigatorios') 
 
 botaoEnviar.addEventListener('click', () => {
     let inputVazio = false;
@@ -13,13 +13,12 @@ botaoEnviar.addEventListener('click', () => {
     });
 
     if (inputVazio) {
-        removeBorda('borda-verde')
         addBorda('borda-vermelha')
-        camposObrigatorios.classList.add('obrigatorio')
+        camposObrigatorios.classList.add('campos-obrigatorios')
     } else {
         removeBorda('borda-vermelha')
         addBorda('borda-verde')
-        camposObrigatorios.classList.remove('obrigatorio')
+        camposObrigatorios.classList.remove('campos-obrigatorios')
     }
 
 });
