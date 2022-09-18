@@ -1,8 +1,6 @@
 const botaoEnviar = document.getElementById('btn-enviar');
 const inputs = document.querySelectorAll('.input');
-const camposObrigatorios = document.getElementById('obrigatorio')
-
-console.log(camposObrigatorios) 
+const camposObrigatorios = document.getElementById('obrigatorio') 
 
 botaoEnviar.addEventListener('click', () => {
     let inputVazio = false;

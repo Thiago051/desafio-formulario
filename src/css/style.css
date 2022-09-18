@@ -8,7 +8,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 12px 0;
     height: 100vh;
 }
 
@@ -81,7 +80,7 @@ main {
     margin-bottom: 11px;
 }
 
-.formulario span { /*.formulario button*/
+.formulario span {
     width: 100%;
     display: inline-block; 
     text-align: center;
@@ -102,12 +101,22 @@ main {
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.7);
 }
 
-.formulario .input.borda-verde {
+.formulario .input.borda-verde{
     border: 1px solid #00C22B;
 }
 
-.formulario .input.borda-vermelha {
+.formulario .input.borda-verde:focus {
+    outline: none;
+    border: 2px solid #00C22B;
+}
+
+.formulario .input.borda-vermelha{
     border: 1px solid #F52E2E;
+}
+
+.formulario .input.borda-vermelha:focus {
+    outline: none;
+    border: 2px solid #F52E2E;
 }
 
 .formulario .obrigatorio {
