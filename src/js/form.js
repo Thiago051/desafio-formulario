@@ -13,6 +13,7 @@ botaoEnviar.addEventListener('click', () => {
     });
 
     if (inputVazio) {
+        removeBorda('borda-verde')
         addBorda('borda-vermelha')
         camposObrigatorios.classList.add('campos-obrigatorios')
     } else {
