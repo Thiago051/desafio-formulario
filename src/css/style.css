@@ -128,3 +128,25 @@ main {
     color: #F52E2E;
     font-weight: bold;
 }
+
+/* Reposivo */
+
+@media(max-width: 700px) {
+    
+    main {
+        flex-direction: column;
+    }
+
+    .conteudo {
+        padding: 0;
+    }
+    
+    .conteudo .titulo {
+        text-align: center;
+    }
+
+    .conteudo .texto {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
